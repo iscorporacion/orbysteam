@@ -1,0 +1,12 @@
+{
+  "name": "orbysteam",
+  "version": "1.0.0",
+  "description": "Crear una aplicación que permita gestionar el equipo de Orbys y realizar consultas sobre estos",
+  "main": "orbysteam.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Orbys Group S.A.S",
+  "license": "ISC"
+}
