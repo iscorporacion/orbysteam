@@ -4,9 +4,19 @@
   "description": "Crear una aplicación que permita gestionar el equipo de Orbys y realizar consultas sobre estos",
   "main": "orbysteam.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/orbysteam.js"
   },
   "keywords": [],
   "author": "Orbys Group S.A.S",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-myconnection": "^1.0.4",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
 }
