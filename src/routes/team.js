@@ -24,4 +24,9 @@ router.get("/add_employee",(req,res) => {
     res.render("add_employee")
 });
 
+router.post("/add_employee",(req,res) => {
+    console.log(req.body.file);
+    res.render("add_employee")
+});
+
 module.exports = router;
