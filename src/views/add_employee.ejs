@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <!-- <link rel="manifest" href="img/favicon/manifest.json"> -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid h-100">
+        <div class="d-flex align-items-center flex-column justify-content-center h-100">
+            <h3 class="">Agregar Empleado</h3>
+            <div class="card col-6">
+                <div class="card-body">
+                    <form class="text-dark" method="POST">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="/img/user.jpg" class="card-img-top user-default"
+                                        alt="imagen de usuario por defecto">
+                                    <div class="card-body">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="emp_foto" name="emp_foto">
+                                            <label class="custom-file-label" for="emp_foto"
+                                                data-browse="Seleccionar"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label for="emp_tipodocumento">Tipó de Documento</label>
+                                        <select class="form-control custom-select" id="emp_tipodocumento" name="emp_tipodocumento">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                          </select>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="emp_documento">Numero de Documento</label>
+                                        <input type="text" class="form-control" name="emp_documento" id="emp_documento">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label for="emp_nombre">Nombre</label>
+                                        <input type="text" class="form-control" name="emp_nombre" id="emp_nombre">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="emp_apellido">Apellidos</label>
+                                        <input type="text" class="form-control" name="emp_apellido" id="emp_apellido">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label for="emp_cargo">Cargo</label>
+                                        <select class="form-control custom-select" id="emp_cargo" name="emp_cargo">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                          </select>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="emp_telefono">Teléfono</label>
+                                        <input type="text" class="form-control" name="emp_telefono" id="emp_telefono">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-12">
+                                        <label for="emp_email">Correo electrónico</label>
+                                        <input type="text" class="form-control" name="emp_email" id="emp_email">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-12">
+                                        <label for="emp_descripcion">Correo electrónico</label>
+                                        <textarea class="form-control" name="emp_descripcion" id="emp_descripcion" rows="5"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <script src="/popper.js/dist/umd/popper.min.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

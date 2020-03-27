@@ -16,4 +16,12 @@ router.get("/admin",(req,res) => {
     })
 });
 
+router.get("/add_user",(req,res) => {
+    res.render("add_user")
+});
+
+router.get("/add_employee",(req,res) => {
+    res.render("add_employee")
+});
+
 module.exports = router;
