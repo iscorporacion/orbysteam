@@ -10,11 +10,15 @@
   "author": "Orbys Group S.A.S",
   "license": "ISC",
   "dependencies": {
+    "@popperjs/core": "^2.1.1",
+    "bootstrap": "^4.4.1",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
     "express-myconnection": "^1.0.4",
+    "jquery": "^3.4.1",
     "morgan": "^1.10.0",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"

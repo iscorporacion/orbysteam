@@ -12,7 +12,7 @@ router.get("/team",(req,res) => {
 
 
 router.get("/registroUsuario",(req,res) => {
-    res.render("team");
+    res.render("registroUsuario");
 });
 
 module.exports = router;
