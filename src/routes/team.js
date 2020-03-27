@@ -5,14 +5,15 @@ router.get("/",(req,res) => {
     res.render("index")
 });
 
-
-router.get("/team",(req,res) => {
-    res.render("team");
-});
-
-
-router.get("/registroUsuario",(req,res) => {
-    res.render("registroUsuario");
+router.get("/admin",(req,res) => {
+    res.render("admin",{
+        name:"Luis fernando",
+        botones:{
+            usuario:"Add User",
+            empleado:"Add Employee",
+            buscar:"Search"
+        }
+    })
 });
 
 module.exports = router;

@@ -1,0 +1,34 @@
+body {
+    background: #8E2DE2;
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+    color: white;
+}
+body, html{
+    height: 100%;
+}
+
+.btn-icon{
+    height: 150px;
+    width: 150px;
+    padding: 0;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.btn-icon>i{
+    display: block;
+    font-size: 5rem;
+}
+.btn-icon>span{
+    padding-top: 10px;
+    display: block;
+    font-size: 1rem;
+}
+.btn-cerrar{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}

@@ -21,32 +21,35 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/main.css">
     <title>Document</title>
 </head>
 
 <body>
-    <div class="d-flex align-items-center flex-column justify-content-center h-100">
-        <h1 class="display-4">Login</h1>
-        <div class="card">
+    <div class="d-flex align-items-center flex-column justify-content-center h-100">        
+        <div class="card bg-transparent border-0">
             <div class="card-body">
-                <form>
-                    <div class="form-group">
-                        <input type="email" name="usu_email" class="form-control" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <input type="password" name="usu_password" class="form-control" placeholder="Password">
-                    </div>
-                    <div class="form-group">
-                        <button type="button" class="btn btn-primary btn-block">Ingresar</button>
-                    </div>
-                </form>
+                <button class="btn btn-success btn-icon">
+                    <i class="fa fa-user-circle"></i>
+                    <span><%=botones.usuario %></span>
+                </button>
+                <button class="btn btn-success btn-icon">
+                    <i class="fa fa-user"></i>
+                    <span><%=botones.empleado %></span>
+                </button>
+                <button class="btn btn-success btn-icon">
+                    <i class="fa fa-search"></i>
+                    <span><%=botones.buscar %></span>
+                </button>
             </div>
         </div>
+        <h1 class="display-4"><%=name %></h1>
     </div>
+    <div class="btn btn-danger btn-cerrar" data-toggle="tooltip" data-placement="left" title="Cerrar Sesion">X</div>
     <script src="/jquery/dist/jquery.min.js"></script>
-    <script src="/@popperjs/core/dist/umd/popper.js"></script>
+    <script src="/popper.js/dist/umd/popper.min.js"></script>
     <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/js/main.js"></script>
 </body>
