@@ -6,6 +6,7 @@ router.get("/",(req,res) => {
 });
 
 router.get("/admin",(req,res) => {
+
     res.render("admin",{
         name:"Luis fernando",
         botones:{
@@ -22,6 +23,17 @@ router.get("/add_user",(req,res) => {
 
 router.get("/add_employee",(req,res) => {
     res.render("add_employee")
+});
+
+router.get("/search",(req,res) => {
+    res.render("search",{
+        color:"danger",
+        data:[
+            {name:"diego cardona",cargo:"data base admin",id:1},
+            {name:"ivan florez",cargo:"backend",id:2},
+            {name:"marlon florez",cargo:"frontend",id:3},
+        ]
+    })
 });
 
 router.post("/add_employee",(req,res) => {

@@ -32,6 +32,14 @@ body, html{
     height: 40px;
     border-radius: 50%;
 }
+.btn-regresar{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
 .user-default{
     /* width: 190px; */
 }

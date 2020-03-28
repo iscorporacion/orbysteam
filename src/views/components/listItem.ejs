@@ -1,0 +1,15 @@
+<% if (typeof data!='undefined') { %>
+<% data.forEach(function(item){ %>
+<a href="/search/<%= item.id %>" class="list-group-item list-group-item-action d-flex justify-content-start mb-1 item-empleado" id="<%= item.id %>">
+    <div class="col-2 p-0">
+        <img src="/img/user.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+    <div class="col-10">
+        <div class="d-flex flex-column">
+            <span class="flex-fill"><%= item.name %></span>
+            <span class="flex-fill font-weight-bold"><%= item.cargo %></span>
+        </div>
+    </div>
+</a>
+<% }); %>
+<% }; %>

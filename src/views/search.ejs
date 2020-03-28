@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <!-- <link rel="manifest" href="img/favicon/manifest.json"> -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid h-100">
+        <form action="" method="post">
+            <div class="d-flex justify-content-end">
+                <div class="p-2 form-group col-4">
+                    <input type="text" name="" id="" class="form-control" autofocus>
+                </div>
+                <div class="p-2 pr-2 form-group">
+                    <button type="submit" class="btn btn-info text-white"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </form>
+        <div class="d-flex">
+            <div class="flex-row col-2">
+                <h5>Empleados</h5>
+                <div class="list-group text-dark">
+                    <%- include('components/listItem',data) %>
+                </div>
+            </div>
+            <div class="flex-row col-10">
+                <h5>Vista Previa</h5>
+                <div class="card col-12 text-dark">
+                    <div class="card-body">
+                        <div class="d-flex flex-column">
+                            <div class="flex-row">
+                                <div class="d-flex">
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <img src="/img/user.jpg" class="card-img-top img-fluid rounded-circle"
+                                                alt="imagen de usuario por defecto">
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="d-flex flex-column">
+                                            <span class="flex-fill  font-weight-bold text-uppercase"><h1>Nombre empleado</h1></span>
+                                            <span class="flex-fill"><h4>Diego cardona</h4></span>
+                                            <span class="flex-fill  font-weight-bold text-uppercase"><h1>Cargo</h1></span>
+                                            <span class="flex-fill"><h4>Data base admin</h4></span>
+                                            <span class="flex-fill  font-weight-bold text-uppercase"><h1>Descripción</h1></span>
+                                            <span class="flex-fill"><p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium alias ratione ad aliquam cupiditate cum, recusandae, nisi id enim modi eos sequi. Optio corporis distinctio, quasi praesentium dolore voluptas expedita.</p></span>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <button class="btn <%= `btn-${color}`%> text-white col-2 mr-2">Eliminar</button>
+                                            <button class="btn btn-warning text-white col-2">Editar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="/admin" class="btn btn-danger btn-regresar" data-toggle="tooltip" data-placement="left" title="Admin"><i class="fa fa-arrow-left"></i></a>
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <script src="/popper.js/dist/umd/popper.min.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
