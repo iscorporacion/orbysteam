@@ -23,25 +23,15 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/main.css">
-    <title>Document</title>
+    <title>Error</title>
 </head>
 
 <body>
     <div class="d-flex align-items-center flex-column justify-content-center h-100">
-        <h1 class="display-4">Login</h1>
-        <div class="card">
+        <h1 class="display-4">Error 404</h1>
+        <div class="card text-dark">
             <div class="card-body">
-                <form action="/admin">
-                    <div class="form-group">
-                        <input type="email" name="usu_email" class="form-control" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <input type="password" name="usu_password" class="form-control" placeholder="Password">
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
-                    </div>
-                </form>
+               <h1><%= message %></h1>
             </div>
         </div>
     </div>

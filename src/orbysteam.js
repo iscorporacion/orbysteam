@@ -3,7 +3,7 @@ const path = require('path');
 const morgan = require("morgan");
 const favicon = require('serve-favicon');
 
-const teamRouter = require('./routes/team');
+const teamRouter = require('./routes/teamRoutes');
 
 const app = express();
 

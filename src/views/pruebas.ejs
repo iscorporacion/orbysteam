@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -21,34 +21,29 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/sweetalert2/dist/sweetalert2.min.css">
     <link rel="stylesheet" href="/css/main.css">
     <title>Document</title>
 </head>
 
 <body>
-    <div class="d-flex align-items-center flex-column justify-content-center h-100">
-        <h1 class="display-4">Login</h1>
-        <div class="card">
+    <div class="d-flex align-items-center flex-column justify-content-center h-100">        
+        <div class="card bg-transparent border-0">
             <div class="card-body">
-                <form action="/admin">
-                    <div class="form-group">
-                        <input type="email" name="usu_email" class="form-control" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <input type="password" name="usu_password" class="form-control" placeholder="Password">
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
-                    </div>
-                </form>
+                <button class="btn btn-primary btnPulsar" data-id="1" data-cargo="cargo1">Pulsar 1</button>
+                <button class="btn btn-secondary btnPulsar" data-id="2" data-cargo="cargo2">Pulsar 2</button>
+                <button class="btn btn-danger btnPulsar" data-id="3" data-cargo="cargo2">Pulsar 3</button>
             </div>
         </div>
     </div>
     <script src="/jquery/dist/jquery.min.js"></script>
     <script src="/popper.js/dist/umd/popper.min.js"></script>
     <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/sweetalert2/dist/sweetalert2.min.js"></script>
     <script src="/js/main.js"></script>
+    <script src="/js/pruebas.js"></script>
 </body>
 
 </html>
