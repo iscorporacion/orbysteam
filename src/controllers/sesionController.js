@@ -1,6 +1,6 @@
 module.exports = (req,res,next) => {
     console.log("Verifique si hay sesion");
-    let permiso = false;
+    let permiso = true;
     if(permiso){
         next();
     }else{

@@ -5,6 +5,7 @@ const adminController = require("../controllers/adminController");
 const userController = require("../controllers/userController");
 const employeeController = require("../controllers/employeeController");
 const searchController = require("../controllers/searchController");
+const pruebasController = require("../controllers/ejemplosController");
 const sessionController = require("../controllers/sesionController"); 
 
 // **** INDEX **** //
@@ -22,6 +23,8 @@ router.get("/search",sessionController,searchController.index);
 router.get("/pruebas",(req,res) => {
     res.render("pruebas")
 });
+//PRUEBAS ADICIONALES
+router.get("/pruebas2",pruebasController.index);
 // **** OTHER **** //
 router.get("*",(req,res)=>{
     res.status(200).render("error",{message:"Archivo no encontrado"});
